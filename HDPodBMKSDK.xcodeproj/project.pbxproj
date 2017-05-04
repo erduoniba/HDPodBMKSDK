@@ -7,13 +7,23 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9AA7B4E4CB2B09310E3250DA /* Pods_HDPodBMKSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = BC026D7B05D3D540FB61FB1A /* Pods_HDPodBMKSDK.framework */; };
 		D907A4561EBA31E100976C7F /* HDPodBMKSDK.h in Headers */ = {isa = PBXBuildFile; fileRef = D907A4541EBA31E100976C7F /* HDPodBMKSDK.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D907A45E1EBA320A00976C7F /* HDBMKPodViewController.h in Headers */ = {isa = PBXBuildFile; fileRef = D907A45C1EBA320A00976C7F /* HDBMKPodViewController.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		D907A45F1EBA320A00976C7F /* HDBMKPodViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = D907A45D1EBA320A00976C7F /* HDBMKPodViewController.m */; };
+		D9B3AC4A1EBB7D810020A519 /* HDPodBMKSDK.podspec in Resources */ = {isa = PBXBuildFile; fileRef = D9B3AC491EBB7D810020A519 /* HDPodBMKSDK.podspec */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		18489B1356BC32289B63C512 /* Pods-HDPodBMKSDK.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HDPodBMKSDK.debug.xcconfig"; path = "Pods/Target Support Files/Pods-HDPodBMKSDK/Pods-HDPodBMKSDK.debug.xcconfig"; sourceTree = "<group>"; };
+		BC026D7B05D3D540FB61FB1A /* Pods_HDPodBMKSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_HDPodBMKSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D907A4511EBA31E100976C7F /* HDPodBMKSDK.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HDPodBMKSDK.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		D907A4541EBA31E100976C7F /* HDPodBMKSDK.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HDPodBMKSDK.h; sourceTree = "<group>"; };
 		D907A4551EBA31E100976C7F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D907A45C1EBA320A00976C7F /* HDBMKPodViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HDBMKPodViewController.h; sourceTree = "<group>"; };
+		D907A45D1EBA320A00976C7F /* HDBMKPodViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HDBMKPodViewController.m; sourceTree = "<group>"; };
+		D9B3AC491EBB7D810020A519 /* HDPodBMKSDK.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; fileEncoding = 4; path = HDPodBMKSDK.podspec; sourceTree = SOURCE_ROOT; };
+		F51934E10D1ADCBF679CDCD1 /* Pods-HDPodBMKSDK.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-HDPodBMKSDK.release.xcconfig"; path = "Pods/Target Support Files/Pods-HDPodBMKSDK/Pods-HDPodBMKSDK.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -21,17 +31,37 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9AA7B4E4CB2B09310E3250DA /* Pods_HDPodBMKSDK.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		269034C6DBFDD58EC7F6454A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				BC026D7B05D3D540FB61FB1A /* Pods_HDPodBMKSDK.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		661F3E81EA03C697DA881286 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				18489B1356BC32289B63C512 /* Pods-HDPodBMKSDK.debug.xcconfig */,
+				F51934E10D1ADCBF679CDCD1 /* Pods-HDPodBMKSDK.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 		D907A4471EBA31E100976C7F = {
 			isa = PBXGroup;
 			children = (
 				D907A4531EBA31E100976C7F /* HDPodBMKSDK */,
 				D907A4521EBA31E100976C7F /* Products */,
+				661F3E81EA03C697DA881286 /* Pods */,
+				269034C6DBFDD58EC7F6454A /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -46,8 +76,11 @@
 		D907A4531EBA31E100976C7F /* HDPodBMKSDK */ = {
 			isa = PBXGroup;
 			children = (
+				D9B3AC491EBB7D810020A519 /* HDPodBMKSDK.podspec */,
 				D907A4541EBA31E100976C7F /* HDPodBMKSDK.h */,
 				D907A4551EBA31E100976C7F /* Info.plist */,
+				D907A45C1EBA320A00976C7F /* HDBMKPodViewController.h */,
+				D907A45D1EBA320A00976C7F /* HDBMKPodViewController.m */,
 			);
 			path = HDPodBMKSDK;
 			sourceTree = "<group>";
@@ -59,6 +92,7 @@
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D907A45E1EBA320A00976C7F /* HDBMKPodViewController.h in Headers */,
 				D907A4561EBA31E100976C7F /* HDPodBMKSDK.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -70,10 +104,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D907A4591EBA31E100976C7F /* Build configuration list for PBXNativeTarget "HDPodBMKSDK" */;
 			buildPhases = (
+				5B061377A134DB68B23410F4 /* [CP] Check Pods Manifest.lock */,
 				D907A44C1EBA31E100976C7F /* Sources */,
 				D907A44D1EBA31E100976C7F /* Frameworks */,
 				D907A44E1EBA31E100976C7F /* Headers */,
 				D907A44F1EBA31E100976C7F /* Resources */,
+				9AF3F37A925733C3C292F88A /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -121,16 +157,51 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D9B3AC4A1EBB7D810020A519 /* HDPodBMKSDK.podspec in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5B061377A134DB68B23410F4 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		9AF3F37A925733C3C292F88A /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-HDPodBMKSDK/Pods-HDPodBMKSDK-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		D907A44C1EBA31E100976C7F /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D907A45F1EBA320A00976C7F /* HDBMKPodViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -237,9 +308,11 @@
 		};
 		D907A45A1EBA31E100976C7F /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 18489B1356BC32289B63C512 /* Pods-HDPodBMKSDK.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -254,9 +327,11 @@
 		};
 		D907A45B1EBA31E100976C7F /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F51934E10D1ADCBF679CDCD1 /* Pods-HDPodBMKSDK.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_IDENTITY = "";
 				DEFINES_MODULE = YES;
+				DEVELOPMENT_TEAM = "";
 				DYLIB_COMPATIBILITY_VERSION = 1;
 				DYLIB_CURRENT_VERSION = 1;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
@@ -288,6 +363,7 @@
 				D907A45B1EBA31E100976C7F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
