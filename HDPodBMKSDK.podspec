@@ -10,7 +10,7 @@ Pod::Spec.new do |s|
     s.platform     = :ios, "8.0"
     s.requires_arc = true
     s.license      = { :type => 'MIT'}
-    s.source       =  { :git => 'ssh://denglibing@teamcode.fangdd.net:29418/fangdd/customer/fdd-app-ios-sdk', :tag => "#{s.version}"}
+    s.source       =  { :git => 'https://github.com/erduoniba/HDPodBMKSDK.git', :tag => "#{s.version}"}
 
     s.subspec 'HDPodBMKSDK' do |hdBMK|
         hdBMK.source_files = 'HDPodBMKSDK/*.{h,m,mm}'

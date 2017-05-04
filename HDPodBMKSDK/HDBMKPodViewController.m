@@ -18,10 +18,8 @@
 
 @implementation HDBMKPodViewController
 
-- (BMKMapView *)mapView
-{
-    if(_mapView == nil)
-    {
+- (BMKMapView *)mapView {
+    if(_mapView == nil) {
         _mapView = [[BMKMapView alloc]initWithFrame:CGRectZero];
         [self.view addSubview:_mapView];
     }
