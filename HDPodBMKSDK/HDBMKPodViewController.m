@@ -41,6 +41,15 @@
     self.view.backgroundColor = [UIColor grayColor];
     
     self.mapView.frame = CGRectMake(0, 0, self.view.frame.size.width, self.view.frame.size.height);
+
+    UIButton *bt = [UIButton buttonWithType:UIButtonTypeInfoLight];
+    bt.frame = CGRectMake(self.view.frame.size.width - 80, self.view.frame.size.height - 80, 40, 40);
+    [bt addTarget:self action:@selector(dismissToMasterVC) forControlEvents:UIControlEventTouchUpInside];
+    [self.view addSubview:bt];
+}
+
+- (void)dismissToMasterVC {
+    [self dismissViewControllerAnimated:YES completion:Nil];
 }
 
 - (void)viewWillAppear:(BOOL)animated
