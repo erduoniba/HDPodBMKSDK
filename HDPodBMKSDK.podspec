@@ -25,4 +25,7 @@ Pod::Spec.new do |s|
         'ENABLE_BITCODE'           => 'NO'
     }
 
+#    s.framework = 'CoreLocation', 'QuartzCore', 'OpenGLES', 'SystemConfiguration', 'CoreGraphics', 'Security', 'CoreTelephony'
+#    s.libraries = 'sqlite3.0', 'stdc++.6.0.9'
+
 end
