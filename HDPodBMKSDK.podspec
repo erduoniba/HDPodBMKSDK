@@ -18,17 +18,13 @@ Pod::Spec.new do |s|
 
     s.dependency 'BaiduMapKit'
     
-#    s.frameworks   = "CoreLocation", "CoreTelephony", "OpenGLES", "QuartzCore", "Security", "SystemConfiguration"
-#    s.libraries    = "z", "sqlite3.0", "stdc++.6.0.9"
+    s.frameworks   = "CoreLocation", "CoreTelephony", "OpenGLES", "QuartzCore", "Security", "SystemConfiguration", "BaiduMapAPI_Base", "BaiduMapAPI_Cloud", "BaiduMapAPI_Location", "BaiduMapAPI_Map", "BaiduMapAPI_Radar", "BaiduMapAPI_Search", "BaiduMapAPI_Utils"
+    s.libraries    = "z", "sqlite3.0", "stdc++.6.0.9", "crypto", "ssl"
 
     s.pod_target_xcconfig = {
         'FRAMEWORK_SEARCH_PATHS'   => '$(inherited) $(PODS_ROOT)/BaiduMapKit/BaiduMapKit',
         'LIBRARY_SEARCH_PATHS'     => '$(inherited) $(PODS_ROOT)/BaiduMapKit/BaiduMapKit/thirdlibs',
-        'OTHER_LDFLAGS'            => '$(inherited) "-undefined dynamic_lookup" -ObjC',
+        'OTHER_LDFLAGS'            => '$(inherited) -undefined dynamic_lookup -lObjC',
         'ENABLE_BITCODE'           => 'NO'
     }
-
-#    s.framework = 'CoreLocation', 'QuartzCore', 'OpenGLES', 'SystemConfiguration', 'CoreGraphics', 'Security', 'CoreTelephony'
-#    s.libraries = 'sqlite3.0', 'stdc++.6.0.9'
-
 end
